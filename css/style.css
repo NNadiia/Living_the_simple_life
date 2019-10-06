@@ -97,11 +97,29 @@ h1 {
     text-transform: uppercase;
     opacity: 1;
     margin-right: 20px;
+    position: relative;
+    display: inline-block;
 }
-.header__link:hover{
-    text-decoration: underline;
+
+.header__link:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    color: #717171;
+    height: 1px;
+    transition: width .5s ease-in-out;
+    -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
 }
-.header__link .active{
+
+.header__link:hover:after,
+.header__link:focus:after {
+    width: 100%;
+}
+
+.header__link .active {
     text-decoration: underline;
 }
 
@@ -152,7 +170,7 @@ h1 {
 
 .post__img:hover,
 .small__img:hover {
-    -webkit-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.05,1.05);
     -webkit-transition-timing-function: ease-out;
     -webkit-transition-duration: 550ms;
     overflow: hidden;
@@ -194,6 +212,12 @@ h1 {
     line-height: 28px;
     color: rgba(112, 112, 112, 1);
     margin-bottom: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
 }
 
 .main-post__content a {
