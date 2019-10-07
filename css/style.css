@@ -101,21 +101,21 @@ h1 {
     display: inline-block;
 }
 
-.header__link:after {
+.menu:after {
     display: block;
     content: "";
     position: absolute;
     left: 0;
     width: 0;
-    color: #717171;
-    height: 1px;
+    background-color: #717171;
+    height: 2px;
     transition: width .5s ease-in-out;
     -webkit-transition: width .5s ease-in-out;
     -moz-transition: width .5s ease-in-out;
 }
 
-.header__link:hover:after,
-.header__link:focus:after {
+.menu:hover:after,
+.menu:focus:after {
     width: 100%;
 }
 
@@ -135,6 +135,7 @@ h1 {
     margin-left: 22.5%;
     width: 1005px;
     margin-top: 54px;
+    margin-bottom: 69px;
     position: relative;
 }
 
