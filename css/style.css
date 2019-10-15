@@ -120,7 +120,7 @@ h1 {
 
 .content {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     max-width: 1005px;
     position: relative;
     justify-content: space-between;
