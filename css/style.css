@@ -158,6 +158,7 @@ h1 {
     display: block;
     position: absolute;
     -webkit-transition-duration: 550ms;
+    -webkit-transition-timing-function: ease-out;
 }
 
 .post__img:hover,
