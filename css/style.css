@@ -28,8 +28,8 @@ body {
     opacity: 1;
     z-index: 1;
     padding: 105px 0;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     -webkit-backface-visibility: hidden;
 }
 
@@ -37,6 +37,7 @@ body {
     padding: 2px 0;
     height: 60px;
     -webkit-backface-visibility: hidden;
+    transition: all 0.5s;
 }
 
 .header__wrapper {
@@ -92,7 +93,7 @@ h1 {
     margin-right: 20px;
 }
 
-.passive:after {
+.header__link--passive:after {
     display: block;
     content: "";
     position: absolute;
@@ -105,12 +106,12 @@ h1 {
     -moz-transition: width .5s ease-in-out;
 }
 
-.passive:hover:after,
-.passive:focus:after {
+.header__link--passive:hover:after,
+.header__link--passive:focus:after {
     width: 100%;
 }
 
-.header__link .active {
+.header__link:active {
     text-decoration: underline;
 }
 
