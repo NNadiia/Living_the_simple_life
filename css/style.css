@@ -271,7 +271,12 @@ h1 {
     margin-top: 45px;
 }
 
-.sidebar > h3 {
+.sidebar__link {
+    display: block;
+    height: 100%;
+}
+
+h3 {
     text-align: left;
     font-weight: bold;
     font-size: 18px;
@@ -294,7 +299,7 @@ h1 {
     overflow: hidden;
 }
 
-.sidebar > p{
+.sidebar-post__about > p{
     text-align: left;
     font-weight: 400;
     font-size: 14px;
@@ -369,6 +374,121 @@ ul {
     font-weight: lighter;
 }
 
+@media (max-width: 1650px) {
+    .header__wrapper {
+        margin-left: calc((100% - 900px)/2);
+        margin-right: calc((100% - 900px)/2);
+        max-width: 900px;
+    }
+
+    .content {
+        max-width: 900px;
+        margin-left: calc((100% - 900px)/2);
+        margin-right: calc((100% - 900px)/2);
+    }
+}
+
+@media (max-width: 950px) {
+    .header {
+        height: 330px;
+        padding: 47px 0 61px;
+    }
+
+    .header__wrapper {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 950px;
+        margin: 0;
+    }
+
+    .header__nav {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 40.52px;
+    }
+    .header__link {
+        text-align: center;
+        display: block;
+        margin: 0 0 30px;
+    }
+
+    .content {
+        max-width: 950px;
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+        justify-content: space-between;
+        flex: 1 1 100%;
+        margin: 58px calc((100% - 518px) / 2) 70px;
+    }
+    .posts-list {
+        flex: 1 1 100%;
+        max-width: 518px;
+    }
+    .main-post {
+        padding-bottom: 25px;
+    }
+    .main-post__data {
+        margin-bottom: 11px;
+    }
+
+    .main-post__img {
+        max-width: 518px;
+    }
+
+    .next-post {
+        flex: 1 1 518px;
+        margin: 25px 0;
+        max-height: 497px;
+        max-width: 518px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .next-post__img{
+        max-width: 517px;
+        width: 100%;
+        margin-right: 0;
+
+    }
+
+    .next-post__data {
+        text-align: right;
+        width: 100%;
+    }
+
+    .aside-wrapper{
+        max-width: 518px;
+        flex-direction: column;
+        margin-left: 0;
+        flex: 1 1 518px;
+        margin-top: 24px;
+    }
+
+    .sidebar:nth-child(2) {
+        margin-top: 78px;
+    }
+
+    .sidebar__img {
+        max-width: 428px;
+        height: 133px;
+    }
+
+    .sidebar-post {
+        max-width: 428px;
+        margin: 20px 0;
+    }
+
+    .sidebar-post >.sidebar__img {
+        max-width: 420px;
+    }
+
+    .main-post_about {
+        margin-bottom: 20px;
+    }
+}
 
 @media (max-width: 557px) {
     .header {
