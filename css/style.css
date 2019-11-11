@@ -125,7 +125,7 @@ h1 {
     justify-content: space-between;
     flex: 1 1 70%;
     margin: 54px 25.16% 69px 22.6%;
-    transition: all 0.3s;
+    transition: height 0.3s;
 }
 
 .posts-list {
@@ -391,6 +391,11 @@ ul {
     .header {
         height: 330px;
         padding: 47px 0 61px;
+    }
+
+    .header__reduce {
+        height: 220px;
+        padding: 1px 0 1px;
     }
 
     .header__wrapper {
